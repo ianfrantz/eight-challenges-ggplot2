@@ -6,6 +6,12 @@ library("ggplot2")
 ```
 
 ##Challenge 1: Labelling Plots
+
+New labelling layers are:
+Title
+Subtitle
+Caption
+
 ```{r cars, echo=FALSE}
 ggplot(mpg, aes(displ, hwy))+
   geom_point(aes(color = class))+
