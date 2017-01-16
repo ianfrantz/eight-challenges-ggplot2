@@ -12,7 +12,7 @@ Title
 Subtitle  
 Caption  
 
-```{r cars, echo=FALSE}
+```{r mpg, echo=FALSE}
 ggplot(mpg, aes(displ, hwy))+
   geom_point(aes(color = class))+
   geom_smooth(se = FALSE, method = "loess")+
@@ -21,3 +21,23 @@ ggplot(mpg, aes(displ, hwy))+
     subtitle = "Two seaters (sports cars) are an exception because of their light weight",
     caption = "Data from fueleconomy.gov"
   )
+```
+
+
+##Challenge 2: Secondary Axis
+
+New function "sec.axis"  
+Only 1-to-1 transformations are allowed
+
+```{r mpg, echo=FALSE}
+ggplot (mpg, aes(displ, hwy)) +
+  geom_point() +
+  scale_y_continuous(
+    "mpg",
+    sec.axis = sec_axis(
+      ~ 235 / .,
+      name = "1/100 km",
+      breaks=seq(2,20, by = 2)
+    )
+  )
+```

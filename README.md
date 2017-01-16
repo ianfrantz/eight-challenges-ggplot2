@@ -3,4 +3,5 @@ The purpose of this project is to code each of the eight examples from Hadley's 
 
 ##[Quick View of Results](http://htmlpreview.github.io/?https://github.com/ianfrantz/eight-challenges-ggplot2/blob/master/index.html)
 
-Challenge 1 - Labelling
+Challenge 1 - Labelling  
+Challenge 2 - Secondary Axis

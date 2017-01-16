@@ -10,3 +10,16 @@ ggplot(mpg, aes(displ, hwy))+
     subtitle = "Subtitle: Two seaters (sports cars) are an exception because of their light weight",
     caption = "Caption: Data from fueleconomy.gov"
   )
+
+#Example 2 - Secondary Axis
+
+ggplot (mpg, aes(displ, hwy)) +
+  geom_point() +
+  scale_y_continuous(
+    "mpg",
+    sec.axis = sec_axis(
+      ~ 235 / .,
+      name = "1/100 km",
+      breaks=seq(2,20, by = 2)
+    )
+  )
