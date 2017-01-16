@@ -12,14 +12,14 @@ Title
 Subtitle  
 Caption  
 
-```{r mpg, echo=FALSE}
+```{r echo=FALSE}
 ggplot(mpg, aes(displ, hwy))+
   geom_point(aes(color = class))+
   geom_smooth(se = FALSE, method = "loess")+
   labs(
-    title = "Fuel efficiency generally decreases with engine size",
-    subtitle = "Two seaters (sports cars) are an exception because of their light weight",
-    caption = "Data from fueleconomy.gov"
+    title = "Title: Fuel efficiency generally decreases with engine size",
+    subtitle = "Subtitle: Two seaters (sports cars) are an exception because of their light weight",
+    caption = "Caption: Data from fueleconomy.gov"
   )
 ```
 
@@ -29,7 +29,7 @@ ggplot(mpg, aes(displ, hwy))+
 New function "sec.axis"  
 Only 1-to-1 transformations are allowed
 
-```{r mpg, echo=FALSE}
+```{r echo=FALSE}
 ggplot (mpg, aes(displ, hwy)) +
   geom_point() +
   scale_y_continuous(
