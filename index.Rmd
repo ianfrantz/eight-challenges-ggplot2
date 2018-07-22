@@ -5,7 +5,7 @@ The purpose of this project is to code each of the eight examples from Hadley's 
 library("ggplot2")
 ```
 
-##Challenge 1: Labelling Plots
+## Challenge 1: Labelling Plots
 
 New labelling layers are:  
 Title  
@@ -24,7 +24,7 @@ ggplot(mpg, aes(displ, hwy))+
 ```
 
 
-##Challenge 2: Secondary Axis
+## Challenge 2: Secondary Axis
 
 New function "sec.axis"  
 Only 1-to-1 transformations are allowed

@@ -2,7 +2,7 @@ library("ggplot2")
 
 #Example 1 - Labelling plots with the labs() function
 
-ggplot(mpg, aes(displ, hwy))+
+p = ggplot(mpg, aes(displ, hwy))+
   geom_point(aes(color = class))+
   geom_smooth(se = FALSE, method = "loess")+
   labs(
@@ -11,9 +11,11 @@ ggplot(mpg, aes(displ, hwy))+
     caption = "Caption: Data from fueleconomy.gov"
   )
 
+p
+
 #Example 2 - Secondary Axis
 
-ggplot (mpg, aes(displ, hwy)) +
+p = ggplot (mpg, aes(displ, hwy)) +
   geom_point() +
   scale_y_continuous(
     "mpg",
@@ -23,3 +25,5 @@ ggplot (mpg, aes(displ, hwy)) +
       breaks=seq(2,20, by = 2)
     )
   )
+
+p
