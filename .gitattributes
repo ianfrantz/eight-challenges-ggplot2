@@ -1,10 +1,10 @@
 # Source files
 # ============
-*.Rdata     text
-*.rdb       binary
-*.rds       binary
-*.Rd        text
-*.Rdx       binary
-*.Rmd		text
-*.R  		text
+*.Rdata linguist-language=R 
+*.rdb   linguist-language=R
+*.rds   linguist-language=R
+*.Rd    linguist-language=R
+*.Rdx   linguist-language=R
+*.Rmd	linguist-language=R
+*.R	linguist-language=R
 
